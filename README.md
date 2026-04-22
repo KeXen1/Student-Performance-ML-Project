@@ -112,7 +112,7 @@ Results include:
 
 | Member | Task(s) |
 |--------|---------|
-| **Kenneth** | Integrator | Model implementation and training |
+| **Kenneth** | Model implementation and training |
 | **Edward** |  Data acquisition, preprocessing, feature selection |
 | **Lauren** |  Model evaluation and visualization |
 
