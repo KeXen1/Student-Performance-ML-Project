@@ -10,40 +10,42 @@ We use a feature-branch workflow. Nobody pushes directly to main.
 
 ### Step-by-step for every task:
 
-Pull the latest main branch first:
+1. Pull the latest main branch first:
+   ```bash
+    git checkout main  
+    git pull origin main
+   ```
 
-git checkout main  
-git pull origin main  
-
-Create a branch for your work:
-
-git checkout -b dev/your-module-name  
-
+2. Create a branch for your work:
+  ```bash
+    git checkout -b dev/your-module-name  
+  ```
 Use branch names listed in the README (e.g., dev/preprocessing, dev/model-training, dev/evaluation).
 
-Do your work. Write code, test it, make sure it runs correctly.
+3. Do your work. Write code, test it, make sure it runs correctly.
 
-Commit with a clear message:
-
-git add .  
-git commit -m "Add data preprocessing with encoding and scaling"  
-
+4. Commit with a clear message:
+   ```bash
+    git add .  
+    git commit -m "Add data preprocessing with encoding and scaling"  
+   ```
 Good commit messages describe what you did, not that you did something.
 
-Good: "Add Random Forest model with cross-validation"  
-Bad: "updated files" or "stuff"  
+  - Good: `"Add Random Forest model with cross-validation"`  
+  - Bad: `"updated files"` or `"stuff"`  
 
-Push your branch:
+5. Push your branch:
+  ```bash
+    git push origin dev/your-module-name
+  ```
 
-git push origin dev/your-module-name  
-
-Open a Pull Request (PR) on GitHub:
+6. Open a Pull Request (PR) on GitHub:
 
 - Go to the repo on GitHub  
 - You'll see a banner saying your branch was recently pushed → click Compare & pull request  
 - Title: what the PR does (e.g., "Add model training notebook and results")  
 - Description: briefly explain what you implemented and what results to check  
-- Assign a reviewer  
+- Assign an integrator as reviewer
 - Wait for review before merging into main  
 
 ---
@@ -52,11 +54,11 @@ Open a Pull Request (PR) on GitHub:
 
 ### File naming
 
-Notebooks: notebooks/01_data_preprocessing.ipynb  
-Scripts (if used): scripts/module_name.py  
-Models: models/model_name.pkl  
-Plots: results/plots/plot_description.png  
-
+- Notebooks: `notebooks/01_data_preprocessing.ipynb`
+- Scripts (if used): scripts/module_name.py  
+- Models: `models/model_name.pkl` 
+- Plots: `results/plots/plot_description.png`
+- Confusion Matrices: `results/confusion_matrices/matrix_description.png`
 ---
 
 ### Python / Notebook style
@@ -93,28 +95,27 @@ When creating plots:
 
 - Use clear titles and axis labels  
 - Keep graphs readable  
-- Save important plots to results/plots/  
+- Save important plots to `results/plots/`
 - Use descriptive file names  
 
 Example:  
-model_accuracy_comparison.png  
+`model_accuracy_comparison.png`
 
 ---
 
 ## If You Hit a Merge Conflict
 
 Don't panic. This usually means two people edited the same file.
-
-git checkout main  
-git pull origin main  
-git checkout dev/your-branch  
-git merge main  
-
-# Fix conflicts in your editor (look for <<<<<<< markers)
-
-git add .  
-git commit -m "Resolve merge conflict with main"  
-git push origin dev/your-branch  
+  ```bash
+    git checkout main  
+    git pull origin main  
+    git checkout dev/your-branch  
+    git merge main
+  # Fix conflicts in your editor (look for <<<<<<< markers)
+    git add .  
+    git commit -m "Resolve merge conflict with main"  
+    git push origin dev/your-branch
+  ```   
 
 If you're stuck, ask the team.
 
