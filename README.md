@@ -68,7 +68,7 @@ Student-Performance-ML/
 
 ### Important Note
 
-To ensure **early prediction**, the feature **G2 (second period grade)** is excluded from the model.
+To ensure early prediction, the feature G2 (second period grade) is excluded from the model.
 
 ---
 
