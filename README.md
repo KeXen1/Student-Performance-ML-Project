@@ -63,14 +63,12 @@ Student-Performance-ML-Project/
 * **Features:** 30 variables (demographic, academic, behavioral)
 
 The dataset can be accessed by cloning the repository and loading it locally.
-
-### Clone the Repository
   ```bash
-      git clone https://github.com/YOUR_USERNAME/Student-Performance-ML-Project.git  
+  git clone https://github.com/YOUR_USERNAME/Student-Performance-ML-Project.git  
       
-      ### Load the Dataset
-      data = pd.read_csv('data/raw/student-mat.csv')
-      display(data)
+  ### Load the Dataset
+  data = pd.read_csv('data/raw/student-mat.csv')
+  display(data)
   ```
 
 ### Key Features Used
