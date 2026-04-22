@@ -19,86 +19,18 @@ Unlike traditional models that rely on complete datasets, this approach focuses 
 * Use only early-semester features
 * Identify students at risk of failure
 * Analyze which factors most influence academic success
-
----
-
-## Repository Structure
-
-```
-Student-Performance-ML-Project/
-│
-├── data/               # Dataset storage
-│   ├── raw/            # Original, unmodified dataset (e.g., student-mat.csv)
-│   └── processed/      # Cleaned dataset and preprocess dataset ready for modeling
-│
-├── notebooks/                        # Google Colab notebooks for each stage
-│   ├── 01_data_preprocessing.ipynb   # Data cleaning, encoding, normalization
-│   ├── 02_feature_selection.ipynb    # Feature analysis and selection
-│   ├── 03_model_training.ipynb       # Model implementation and training
-│   ├── 04_model_evaluation.ipynb     # Metrics, confusion matrix, evaluation
-│   └── 05_final_pipeline.ipynb       # End-to-end pipeline for final demo
-│
-├── results/                  # Output results and visualizations
-│   ├── plots/                # Graphs (accuracy, feature importance, etc.)
-│   ├── confusion_matrices/   # Confusion matrix images
-│   └── metrics.csv           # Summary of model performance metrics
-│
-├── models/                 # Saved trained models
-│   ├── logistic_model.pkl  # Logistic Regression model
-│   └── random_forest.pkl   # Random Forest model
-│
-├── .gitignore
-├── CONTRIBUTING.md
-├── LICENSE.md
-├── README.md
-└── SECURITY.md
-```
-
----
-## Getting Started
-
-### Clone the Repository
-```bash
-git clone https://github.com/YOUR_USERNAME/Student-Performance-ML-Project.git
-```
-### Running the Project in Google Colab
-1. Go to Google Drive  
-2. Click **New → More → Google Colaboratory**  
-   *(If not visible: New → More → Connect more apps → search “Colab”)*  
-3. Rename the notebook and place it inside your project folder  
-4. Click **“Connect”** (top right) to start a runtime  
-5. Upload or copy code from the `notebooks/` folder into the Colab notebook  
-6. Run the notebook:
-   - Click **Runtime → Run all**, or  
-   - Click the **▶️ play button** next to each code cell  
-
+  
 ---
 
 ## Dataset
 
 * **Source:** UCI Machine Learning Repository – Student Performance Dataset
 * **Size:** 649 student records
-* **Features:** 30 variables (demographic, academic, behavioral)
+* **Features:** 30 variables
 
 The dataset can be accessed by cloning the repository and loading it locally.
   ```bash
-  git clone https://github.com/YOUR_USERNAME/Student-Performance-ML-Project.git  
-      
-  ### Load the Dataset
   data = pd.read_csv('data/raw/student-mat.csv')
-  display(data)
-  ```
-
-### Key Features Used
-
-* Study time
-* Absences
-* Social and daily habits
-* First period grade (G1)
-
-### Important Note
-
-To ensure early prediction, the feature G2 (second period grade) is excluded from the model.
 
 ---
 
@@ -120,7 +52,7 @@ To ensure early prediction, the feature G2 (second period grade) is excluded fro
 * Handle missing values
 * Encode categorical variables
 * Normalize numerical features
-* Remove non-early indicators (e.g., G2)
+* Remove non-early indicators
 
 ---
 
@@ -177,11 +109,11 @@ Results include:
 
 ## Team Members
 
-| Member | Role | Task(s) |
-|--------|------|---------|
+| Member | Task(s) |
+|--------|---------|
 | **Kenneth** | Integrator | Model implementation and training |
-| **Edward** | — | Data acquisition, preprocessing, feature selection |
-| **Lauren** | — | Model evaluation and visualization |
+| **Edward** |  Data acquisition, preprocessing, feature selection |
+| **Lauren** |  Model evaluation and visualization |
 
 ---
 
@@ -197,9 +129,3 @@ Results include:
 
 * UCI Machine Learning Repository – Student Performance Dataset
 * P. Cortez and A. Silva, *Using Data Mining to Predict Secondary School Student Performance*, 2008
-
----
-
-## Notes
-
-This project demonstrates the feasibility of early academic performance prediction using machine learning and highlights the importance of data-driven decision-making in education.
