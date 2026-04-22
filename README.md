@@ -55,6 +55,24 @@ Student-Performance-ML-Project/
 ```
 
 ---
+## Getting Started
+
+### Clone the Repository
+```bash
+git clone https://github.com/YOUR_USERNAME/Student-Performance-ML-Project.git
+```
+### Running the Project in Google Colab
+1. Go to Google Drive  
+2. Click **New → More → Google Colaboratory**  
+   *(If not visible: New → More → Connect more apps → search “Colab”)*  
+3. Rename the notebook and place it inside your project folder  
+4. Click **“Connect”** (top right) to start a runtime  
+5. Upload or copy code from the `notebooks/` folder into the Colab notebook  
+6. Run the notebook:
+   - Click **Runtime → Run all**, or  
+   - Click the **▶️ play button** next to each code cell  
+
+---
 
 ## Dataset
 
@@ -154,25 +172,6 @@ Results include:
 * Confusion matrix visualizations
 * Feature importance plots
 * Model comparison charts
-
----
-
-## Getting Started
-
-### Clone the Repository
-```bash
-git clone https://github.com/YOUR_USERNAME/Student-Performance-ML-Project.git
-```
-### Running the Project in Google Colab
-1. Go to Google Drive  
-2. Click **New → More → Google Colaboratory**  
-   *(If not visible: New → More → Connect more apps → search “Colab”)*  
-3. Rename the notebook and place it inside your project folder  
-4. Click **“Connect”** (top right) to start a runtime  
-5. Upload or copy code from the `notebooks/` folder into the Colab notebook  
-6. Run the notebook:
-   - Click **Runtime → Run all**, or  
-   - Click the **▶️ play button** next to each code cell  
 
 ---
 
