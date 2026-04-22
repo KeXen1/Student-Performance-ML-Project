@@ -145,38 +145,22 @@ Results include:
 
 ---
 
-## How to Run
+## Getting Started
 
-### Option 1: Google Colab
-
-1. Open notebooks from the `notebooks/` folder
-2. Mount Google Drive:
-
-```python
-from google.colab import drive
-drive.mount('/content/drive')
-```
-
-3. Run cells sequentially
-
----
-
-### Option 2: Local Environment
-
-1. Clone repository:
-
+### Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/student-performance-ml.git
-cd student-performance-ml
+git clone https://github.com/YOUR_USERNAME/Student-Performance-ML-Project.git
 ```
-
-2. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Run notebooks using Jupyter or VS Code
+### Running the Project in Google Colab
+1. Go to Google Drive  
+2. Click **New → More → Google Colaboratory**  
+   *(If not visible: New → More → Connect more apps → search “Colab”)*  
+3. Rename the notebook and place it inside your project folder  
+4. Click **“Connect”** (top right) to start a runtime  
+5. Upload or copy code from the `notebooks/` folder into the Colab notebook  
+6. Run the notebook:
+   - Click **Runtime → Run all**, or  
+   - Click the **▶️ play button** next to each code cell  
 
 ---
 
