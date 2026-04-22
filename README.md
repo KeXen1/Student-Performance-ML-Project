@@ -48,6 +48,7 @@ Student-Performance-ML-Project/
 │   └── random_forest.pkl
 │
 ├── .gitignore
+├── CONTRIBUTING.md
 ├── LICENSE.md
 ├── README.md
 └── SECURITY.md
