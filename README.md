@@ -29,8 +29,9 @@ Unlike traditional models that rely on complete datasets, this approach focuses 
 * **Features:** 30 variables
 
 The dataset can be accessed by cloning the repository and loading it locally.
-  ```bash
+  ```python
   data = pd.read_csv('data/raw/student-mat.csv')
+  ```
 
 ---
 
