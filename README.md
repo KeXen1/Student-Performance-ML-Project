@@ -3,6 +3,8 @@
 **ECGR 4105/5105 — Introduction to Machine Learning (ML) Spring 2026**
 **University of North Carolina at Charlotte**
 
+---
+
 ## Overview
 
 This project develops a machine learning system to predict student academic performance early in the semester using limited initial data such as attendance, study time, and early grades.
