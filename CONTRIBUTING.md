@@ -17,9 +17,9 @@ We use a feature-branch workflow. Nobody pushes directly to main.
    ```
 
 2. Create a branch for your work:
-  ```bash
+   ```bash
     git checkout -b dev/your-module-name  
-  ```
+   ```
 Use branch names listed in the README (e.g., dev/preprocessing, dev/model-training, dev/evaluation).
 
 3. Do your work. Write code, test it, make sure it runs correctly.
@@ -35,9 +35,9 @@ Good commit messages describe what you did, not that you did something.
   - Bad: `"updated files"` or `"stuff"`  
 
 5. Push your branch:
-  ```bash
+   ```bash
     git push origin dev/your-module-name
-  ```
+   ```
 
 6. Open a Pull Request (PR) on GitHub:
 
@@ -111,7 +111,7 @@ Don't panic. This usually means two people edited the same file.
     git pull origin main  
     git checkout dev/your-branch  
     git merge main
-  # Fix conflicts in your editor (look for <<<<<<< markers)
+    # Fix conflicts in your editor (look for <<<<<<< markers)
     git add .  
     git commit -m "Resolve merge conflict with main"  
     git push origin dev/your-branch
