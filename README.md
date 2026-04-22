@@ -5,22 +5,22 @@
 
 ## Overview
 
-This project develops a machine learning system to **predict student academic performance early in the semester** using limited initial data such as attendance, study time, and early grades.
+This project develops a machine learning system to predict student academic performance early in the semester using limited initial data such as attendance, study time, and early grades.
 
-Unlike traditional models that rely on complete datasets, this approach focuses on **early indicators** to identify students at risk of poor performance, enabling timely intervention and improved academic outcomes.
+Unlike traditional models that rely on complete datasets, this approach focuses on early indicators to identify students at risk of poor performance, enabling timely intervention and improved academic outcomes.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 * Predict final student performance (low, medium, high)
-* Use only **early-semester features**
+* Use only early-semester features
 * Identify students at risk of failure
 * Analyze which factors most influence academic success
 
 ---
 
-## 📂 Project Structure
+## Repository Structure
 
 ```
 Student-Performance-ML/
@@ -51,26 +51,26 @@ Student-Performance-ML/
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 * **Source:** UCI Machine Learning Repository – Student Performance Dataset
 * **Size:** 649 student records
 * **Features:** 30 variables (demographic, academic, behavioral)
 
-### 🔑 Key Features Used
+### Key Features Used
 
 * Study time
 * Absences
 * Social and daily habits
 * First period grade (G1)
 
-### ⚠️ Important Note
+### Important Note
 
 To ensure **early prediction**, the feature **G2 (second period grade)** is excluded from the model.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * Python
 * Google Colab
@@ -127,7 +127,7 @@ Implemented models:
 
 ---
 
-## 📈 Results
+## Results
 
 The models are evaluated to determine:
 
@@ -143,7 +143,7 @@ Results include:
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Option 1: Google Colab
 
@@ -178,11 +178,13 @@ pip install -r requirements.txt
 
 ---
 
-## 👥 Team Members
+## Team Members
 
-* **Edward** – Data acquisition, preprocessing, feature selection
-* **Kenneth** – Model implementation and training
-* **Lauren** – Model evaluation and visualization
+| Member | Role | Task(s) |
+|--------|------|---------|
+| **Edward** | — | Data acquisition, preprocessing, feature selection |
+| **Kenneth** | — | Model implementation and training |
+| **Lauren** | — | Model evaluation and visualization |
 
 ---
 
@@ -194,22 +196,13 @@ pip install -r requirements.txt
 
 ---
 
-## 🔮 Future Improvements
-
-* Hyperparameter tuning
-* Additional models (SVM, Neural Networks)
-* Comparison with full dataset (including G2)
-* Interactive prediction interface
-
----
-
-## 📚 References
+## References
 
 * UCI Machine Learning Repository – Student Performance Dataset
 * P. Cortez and A. Silva, *Using Data Mining to Predict Secondary School Student Performance*, 2008
 
 ---
 
-## ⭐ Notes
+## Notes
 
-This project demonstrates the feasibility of **early academic performance prediction** using machine learning and highlights the importance of data-driven decision-making in education.
+This project demonstrates the feasibility of early academic performance prediction using machine learning and highlights the importance of data-driven decision-making in education.
