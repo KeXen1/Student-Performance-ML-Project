@@ -25,7 +25,7 @@ Unlike traditional models that rely on complete datasets, this approach focuses 
 ## Repository Structure
 
 ```
-Student-Performance-ML/
+Student-Performance-ML-Project/
 │
 ├── data/
 │   ├── raw/                # Original dataset
@@ -47,8 +47,8 @@ Student-Performance-ML/
 │   ├── logistic_model.pkl
 │   └── random_forest.pkl
 │
-├── README.md
-└── requirements.txt
+├── .gitignore
+└── README.md
 ```
 
 ---
