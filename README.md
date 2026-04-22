@@ -83,7 +83,7 @@ To ensure early prediction, the feature G2 (second period grade) is excluded fro
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 
 ### 1. Data Preprocessing
 
@@ -184,13 +184,13 @@ pip install -r requirements.txt
 
 | Member | Role | Task(s) |
 |--------|------|---------|
+| **Kenneth** | Integrator | Model implementation and training |
 | **Edward** | — | Data acquisition, preprocessing, feature selection |
-| **Kenneth** | — | Model implementation and training |
 | **Lauren** | — | Model evaluation and visualization |
 
 ---
 
-## 📌 Expected Outcomes
+## Expected Outcomes
 
 * Accurate early prediction of student performance
 * Identification of at-risk students
