@@ -106,7 +106,7 @@ Example:
 ## If You Hit a Merge Conflict
 
 Don't panic. This usually means two people edited the same file.
-  ```bash
+   ```bash
     git checkout main  
     git pull origin main  
     git checkout dev/your-branch  
@@ -115,7 +115,7 @@ Don't panic. This usually means two people edited the same file.
     git add .  
     git commit -m "Resolve merge conflict with main"  
     git push origin dev/your-branch
-  ```   
+   ```   
 
 If you're stuck, ask the team.
 
