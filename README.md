@@ -27,25 +27,25 @@ Unlike traditional models that rely on complete datasets, this approach focuses 
 ```
 Student-Performance-ML-Project/
 │
-├── data/
-│   ├── raw/                # Original dataset
-│   └── processed/          # Cleaned dataset
+├── data/                   # Dataset storage
+│   ├── raw/                # Original, unmodified dataset (e.g., student-mat.csv)
+│   └── processed/          # Cleaned dataset and preprocess dataset ready for modeling
 │
-├── notebooks/
-│   ├── 01_data_preprocessing.ipynb
-│   ├── 02_feature_selection.ipynb
-│   ├── 03_model_training.ipynb
-│   ├── 04_model_evaluation.ipynb
-│   └── 05_final_pipeline.ipynb
+├── notebooks/              # Google Colab notebooks for each stage
+│   ├── 01_data_preprocessing.ipynb   # Data cleaning, encoding, normalization
+│   ├── 02_feature_selection.ipynb    # Feature analysis and selection
+│   ├── 03_model_training.ipynb       # Model implementation and training
+│   ├── 04_model_evaluation.ipynb     # Metrics, confusion matrix, evaluation
+│   └── 05_final_pipeline.ipynb       # End-to-end pipeline for final demo
 │
-├── results/
-│   ├── plots/
-│   ├── confusion_matrices/
-│   └── metrics.csv
+├── results/                # Output results and visualizations
+│   ├── plots/              # Graphs (accuracy, feature importance, etc.)
+│   ├── confusion_matrices/ # Confusion matrix images
+│   └── metrics.csv         # Summary of model performance metrics
 │
-├── models/
-│   ├── logistic_model.pkl
-│   └── random_forest.pkl
+├── models/                 # Saved trained models
+│   ├── logistic_model.pkl  # Logistic Regression model
+│   └── random_forest.pkl   # Random Forest model
 │
 ├── .gitignore
 ├── CONTRIBUTING.md
